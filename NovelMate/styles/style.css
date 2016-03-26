@@ -1,0 +1,418 @@
+﻿.marright { margin-right:20px; }
+.marleft { margin-left:20px;  }
+.martop { margin-top:20px; }
+.marbottom { margin-bottom :20px; }
+.float-left { float:left; }
+.float-right { float:right; }
+
+.black {
+    background-color:black;
+}
+
+html {
+  height:100%;
+}
+body {
+  padding:0;
+  margin:0;
+  background-image: url("/images/novelmate-background.jpg");
+  height:100%;
+}
+
+a {
+  text-decoration:none;
+  color:inherit;
+}
+input, textarea {
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   background-color:#fff;
+   border:1px solid #ccc;
+   font-size:20px;
+   width:300px;
+   min-height:30px;
+   display:block;
+   margin-bottom:16px;
+   margin-top:8px;
+   -webkit-border-radius:5px;
+   -moz-border-radius:5px;
+   border-radius:5px;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    -webkit-box-shadow:0 0 25px #ccc;
+    -moz-box-shadow:0 0 25px #ccc;
+    box-shadow:0 0 25px #ccc;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+input:not(:focus), textarea:not(:focus) {
+    opacity:0.5;
+}
+
+#main-left {
+    float:left;
+    width:240px;
+    height:100%;
+}
+#main-right {
+   /* float:left;*/
+    overflow:auto;
+    height:100%;
+}
+
+#container {
+    width:960px;
+    margin:0 auto;
+
+}
+#plotform {
+  /*position:absolute;
+  top:67px;/
+  bottom:0px !important;
+  right:0px;
+  left:20%;
+/*  float:left;*/
+  width:100%;
+ /* margin-left:1%;*/
+}
+#top-nav {
+    background-color:white;
+    height:30px;
+    width:100%;
+    border-bottom:1px solid #CCCCCC;
+}
+#nav {
+    background-color:#1f1f1f;
+    height:70px;
+    width:100%;
+
+    /* New stuff */
+    background-color:white;
+   /* height:100px;*/
+        color: #1B2432;
+    font-size: 14px;
+    border-bottom:1px solid #CCCCCC;
+    
+
+}
+    #nav #nav-links {
+        float:right;
+        height:50%;
+        margin-top:20px;
+    }
+    #nav .navpad {
+      /*  margin-top:15px;*/
+        padding-left:15px;
+        padding-right:15px;
+
+    }
+
+    #nav-links ul {
+       text-align:center;
+       list-style-type:none;
+       height:100%;
+    }
+        #nav-links ul li {
+            float:left;
+            color:white;
+            font: 700 18px "Helvetica Neue", Helvetica, Arial, sanserif;
+            text-shadow: 0 1px 0 rgba (0,0,0,0.33);
+            white-space:nowrap;
+            height:100%;
+
+        }
+        #nav-links ul li:hover {
+           /* background-color:#2c2c2c;*/
+        }
+        #nav-links ul li img {
+            padding-right:10px;
+            float:left;
+        }
+        #nav-links ul li p {
+            float:left;
+            margin:0;
+            padding:0;
+            margin-top:5px;
+        }
+        #nav h2 {
+            margin: 0 auto;
+        }
+#main-content {
+  /*  padding:20px;*/
+  /*  padding-top:5px;*/
+}
+.project-title {
+  position:absolute;
+  left:20%;
+  margin-top:14px;
+  color:white;
+  font-size:36px;
+}
+
+
+/* Writer module  */
+
+.newtext {
+  color:#818181;
+  font-size:20px;
+
+}
+    .newtext .plus {
+       color:#4388c8;
+       font-size:28px;
+       font-weight:bold;
+       margin-top:10px;
+       margin-top:10px;
+    }
+    .newtext .minus {
+       font-size:32px;
+       font-weight:bold;
+       color:red;
+       margin-top:10px;
+    }
+.writer-nav {
+  position:absolute;
+  top:67px;
+  bottom:0px;
+  left:0px;
+
+  width:240px;
+  float:left;
+  background-color:#d9ecf4;
+
+  overflow:hidden;
+
+  /* Temp stuff */
+  top: 0px;
+  background-color: #2E3C54;
+  border-right: #CCCCCC;
+}
+.writer-nav .overview ul {
+    margin-left:0px;
+}
+/* Tiny Scrollbar */
+.writer-nav .viewport { width: 90%;; height: 100%; overflow: hidden; position: relative;}
+.writer-nav .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; width:100%;}
+/*.writer-nav .scrollbar{ background: transparent url("broken../plugins/tinyscrollbar/simple/images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+.writer-nav .track { background: transparent url(broken../plugins/tinyscrollbar/simple/images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }*/
+.writer-nav .thumb {/* background: transparent url(../plugins/tinyscrollbar/simple/images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;*/ background-color:#A8A8A8; height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+.writer-nav .thumb .end { background: transparent url(../plugins/tinyscrollbar/simple/images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+.writer-nav .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+.writer-nav-node {
+    height:40px;
+    color:white;
+    font-size:20px;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #737373;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    overflow:hidden;
+    cursor:pointer;
+    /* among other settings: see fiddle */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+  border: 1px solid #a3a3a3;
+     -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+
+
+
+}
+    .writer-nav-node p {
+         margin-top:auto;
+         margin-bottom:auto;
+         margin-left:5%;
+         margin-top:8px;
+         width:100%;
+     }
+     .node-status {
+         float:right;
+         width:50px;
+         margin-top:8px;
+     }
+         .node-status .check {
+             float:right;
+         }
+/*.writer-nav-node:hover {
+  font-weight:bold;
+}
+  .writer-nav .active {
+       background-color:#c7e3ef;
+   }*/
+
+#openbutton {
+  background-color: #4388C8;
+  color:white;
+  padding:5px;
+  width:50px;
+  float:left;
+  text-align:center;
+}
+#closebutton {
+  background-color:red;
+  color:white;
+  padding:5px;
+  width:50px;
+  float:left;
+  text-align:center;
+}
+.roundedborders {
+     -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+.roundedtop {
+     -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -khtml-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.roundedbottom {
+     -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -khtml-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+
+#newchapter-container {
+    width:400px;
+}
+#newchapter { width: 100%; }
+
+.project {
+    height:100%;
+    width:100px;
+    background-color:red;
+    float:left;
+}
+    .project .title {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+.login-block {
+  float:left;
+  margin-right:20px;
+  margin-top:-15px;
+}
+    .login-block label {
+        color:white;
+    }
+    .login-block input{
+        width:150px;
+        margin-top:2px;
+    }
+    .login-block input.button{
+        margin-top:20px;
+        background-color: #4388C8;
+        color:white !important;
+        width:75px;
+        opacity:90.0;
+    }
+    .login-block input:focus {
+        box-shadow:none;
+    }
+
+
+.plan-container {
+    border:2px solid #4388C8;
+    width:200px;
+    height:400px;
+    background-color:white;
+    margin-left:90px;
+    float:left;
+    margin-top:50px;
+}
+    .plan-container .title {
+        background-color: #4388C8;
+       /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0071B7', endColorstr='#4388C8'); /* for IE */
+/*        background: -webkit-gradient(linear, left top, left bottom, from(#1210A9), to(#4388C8)); /* for webkit browsers */
+ /*      background: -moz-linear-gradient(top,  #1210A9,  #4388C8); /* for firefox 3.6+ */
+        color:white;
+        width:120%;
+        font-size:24px;
+        font-weight:bold;
+        overflow:hidden;
+        text-align:center;
+        padding-top:10px;
+        padding-bottom:10px;
+        border-bottom:1px solid #4388C8;
+        margin-left:-20px;
+        margin-top:-10px;
+
+    }
+
+
+
+/* Notes module*/
+.board {
+  background-image:url("http://i164.photobucket.com/albums/u24/_KLeB_/HVY%20MySpace%20V1%20Torn%20Paper/Corkboard-background.gif");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:800px;
+  width:100%;
+  float:left;
+}
+
+.note {
+  width:200px;
+  height:200px;
+/*  background-color:green;*/
+  border: 2px  solid rgba(0,0,0,0.5);
+  border-radius: 4px; padding: 8px;
+
+}
+    .note .title {
+       font-size:24px;
+       font-weight:bold;
+     }
+.background-green {background-color:green;}
+.background-red {background-color:red;}
+.background-blue {background-color:#4388C8;}
+
+.drag { position: relative; }
+
+/* End notes module*/
+/* Softable plot nav*/
+  #sortable {/* list-style-type: none; margin: 0; padding: 0; width: 100%; */}
+  #sortable li { /*margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; */}
+  html>body #sortable li { /*height: 1.5em; line-height: 1.2em; */}
+  .ui-state-highlight { /*height: 1.5em; line-height: 1.2em; */}
+/* End sortable plot nav*/
+
+.cke_contents {
+    width: 80% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding:20px;
+
+}
+.cke_inner {
+    /*background-color:#CCCCCC !important;*/
+    background-image: url("http://blog.hostbaby.com/backgrounds/bg_lightwoodfloor.jpg") !important;
+}
+
